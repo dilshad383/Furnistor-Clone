@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CartContext from "../components/CartContext";
+import CartContext from "./CartContext";
 import { Link } from "react-router-dom";
 
 const Products = ({ children }) => {

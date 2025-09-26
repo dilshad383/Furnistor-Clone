@@ -143,7 +143,9 @@ const Header = () => {
                     <div className="relative"
                     onClick={() => setOpenDropdown((prev) => !prev)}
                     >
-                        <Link className='group' to='' onClick={() => setIsOpen(false)}>
+                        <Link 
+                        to="/products"
+                        className='group' onClick={() => setIsOpen(false)}>
                         <span className="relative inline-block">
                             Products 
                             <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
