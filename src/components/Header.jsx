@@ -42,7 +42,7 @@ const Header = () => {
                         onMouseEnter={() => setOpenDropdown(true)}
                         onMouseLeave={() => setOpenDropdown(false)}
                     >
-                        <Link className="group flex items-center gap-1" to="">
+                        <Link className="group flex items-center gap-1" to="/products">
                         <span className="relative inline-block">
                             Products
                             <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
