@@ -58,8 +58,23 @@ form {
             }
     }
 }
-.contact-bg{
+.contact-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
     background-image: url('./assets/solid-wood.jpeg');
     background-size: cover;
     background-position: center;
+    filter: brightness(0.7);
+    z-index: 0;
+}
+
+.contact-bg > * {
+    position: relative;
+    z-index: 1;
 }

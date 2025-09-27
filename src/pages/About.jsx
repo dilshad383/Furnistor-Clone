@@ -72,10 +72,10 @@ const overlay = [
 const About = () => {
   return (
     <>
-        <section className="py-12 px-12 bg-[#e9e6e3]">
+        <section className="py-12 max-md:px-6 px-12 bg-[#e9e6e3]">
             <div className="grid lg:grid-cols-3 gap-6">
                 <div className="max-lg:order-2 my-auto">
-                    <h2 className="text-5xl font-light">
+                    <h2 className="text-5xl max-md:text-4xl font-light">
                         Our Story
                     </h2>
                     <p className='mt-4'>Furnistør was born from a passion for authentic design and exceptional quality. We create furniture that bridges timeless aesthetics with the evolving needs of modern life, believing that our homes should reflect both who we are and who we aspire to become.</p>
@@ -95,7 +95,7 @@ const About = () => {
                     <img src={about2} alt="" />
                 </div>
                 <div className="my-auto">
-                    <h2 className="text-5xl font-light">
+                    <h2 className="text-5xl max-md:text-3xl font-light">
                         Where Timeless Design Meets Modern Living
                     </h2>
                     <p className='mt-4'>
@@ -109,7 +109,7 @@ const About = () => {
         </section>
 
 {/* DesignPhilosophy */}
-        <section className="px-12 py-8">
+        <section className="px-12 py-8 max-md:px-6">
             <h2 className="text-5xl font-light">Design Philosophy</h2>
             <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-6 my-12">
                 {design.map((item, idx)=> (
@@ -151,16 +151,16 @@ const About = () => {
                 ))}
             </div>
 
-            <div className="grid gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
                 {overlay.map((item, idx)=> (
                     <div key={idx} className="relative text-white">
-                        <img className='brightness-70' src={item.img} alt="" />
-                        <div className="absolute top-6 mx-8">
-                            <h4 className="text-3xl font-light py-2">
+                        <img className='brightness-60' src={item.img} alt="" />
+                        <div className="absolute top-2 max-md:mx-2 mx-8">
+                            <h4 className="text-3xl font-light py-2 max-md:py-0">
                                 {item.title}
                             </h4>
-                            <p className='py-4'>{item.text1}</p>
-                            <p>{item.text2}</p>
+                            <p className='pt-2 pb-2 max-md:text-sm'>{item.text1}</p>
+                            <p className='max-md:text-sm'>{item.text2}</p>
 
                         </div>
                     </div>
@@ -168,7 +168,7 @@ const About = () => {
             </div>
 
             <div className="text-center mt-8">
-                <h3 className="text-3xl font-light">
+                <h3 className="text-3xl font-light mx-8">
                     Every joint, every grain, every finish tells a story. Our job is to make sure it's a story worth telling for generations.
                 </h3>
                 <p className='font-semibold mt-4 text-lg'>Erik Johannsen</p>

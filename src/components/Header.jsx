@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <>
         <header className="bg-[#e9e6e3]">
-            <div className="flex justify-between py-2 px-4 text-sm">
+            <div className="flex justify-between py-2 px-4 text-[14px] max-md:hidden">
                 <div className="">
                     Free shipping on orders above 150€
                 </div>
@@ -160,7 +160,7 @@ const Header = () => {
                             `}
                             >
                             <Link
-                                to="/products/phones"
+                                to="/category/bedroom"
                                 className="block px-4 py-2"
                                 onClick={() => setIsOpen(false)}
                             >
@@ -174,7 +174,7 @@ const Header = () => {
                                 Lighting
                             </Link>
                             <Link
-                                to="/products/accessories"
+                                to="/category/living-room"
                                 className="block px-4 py-2"
                                 onClick={() => setIsOpen(false)}
                             >

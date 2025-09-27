@@ -21,9 +21,9 @@ addToCart({ ...item, quantity: 1 });
 }
 return (
 <div>
-    <section className="bg-[#e9e6e3] px-14 py-8">
+    <section className="bg-[#e9e6e3] px-12 max-md:px-4 py-8">
             <h2 className="text-5xl font-light">{sectionTitle}</h2>
-            <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 my-4">
+            <div className="grid lg:grid-cols-4 md:grid-cols-3 max-md:grid-cols-2 gap-8  max-md:gap-4 my-4">
             {items.map((item, idx) => (
                 <div id={idx} className="group" key={idx}>
                 <div className="h-70">

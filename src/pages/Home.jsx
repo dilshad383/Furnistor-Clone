@@ -77,7 +77,7 @@ const Home = () => {
         {/* <BackgroundVideo /> */}
       </div>
 
-      <section className="bg-[#e9e6e3] px-14 py-8">
+      <section className="bg-[#e9e6e3] px-14 max-md:px-4 py-8">
         <Categories 
         items={category}
         sectionTitle="Shop by Room"
@@ -129,11 +129,11 @@ const Home = () => {
           <img src={collection2} alt="" />
         </div>
         <div className="!text-white mt-auto">
-          <h2 className="text-6xl font-light">
+          <h2 className="text-5xl font-light max-md:text-3xl">
             The Lounge Edit
           </h2>
-          <p className='!text-white my-4'>Unwind in style. Discover our handpicked selection of sofas, lounge chairs, and coffee tables designed for effortless comfort and timeless appeal.</p>
-          <button className="border my-4 px-2 py-1">Shop Collection</button>
+          <p className='!text-white my-2 text-sm'>Unwind in style. Discover our handpicked selection of sofas, lounge chairs, and coffee tables designed for effortless comfort and timeless appeal.</p>
+          <button className="border my-4 px-2 py-1 hover:bg-white/10 cursor-pointer">Shop Collection</button>
         </div>
       </section>
 
@@ -141,7 +141,7 @@ const Home = () => {
         <ShopByCategory/>
 
 {/* from our journal */}
-            <section className="px-8 py-12 bg-[#e9e6e3]">
+            <section className="px-8 max-md:px-4 py-12 bg-[#e9e6e3]">
                 <div className="flex justify-between pb-6">
                   <h2 className="text-4xl font-light">
                     From our journal

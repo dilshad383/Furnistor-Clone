@@ -61,13 +61,13 @@ const elements = [
 const ShopByCategory = () => {
 return (
     <div>
-        <section className=" mt-6 px-8">
-            <div className="pb-8">
-            <h2 className='text-5xl font-light'>Shop by category </h2>
-            <div className="grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 gap-12 mt-8">
+        <section className=" mt-6 px-8 max-md:px-4">
+            <div className="">
+            <h2 className='text-5xl max-md:text-3xl font-light'>Shop by category </h2>
+            <div className="grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 gap-12 mt-4 md:mt-8">
                 {shopByCategory.map((item, idx) => (
                 <div key={idx} className="relative">
-                <div className="text-white absolute z-1  left-2 text-2xl">
+                <div className="text-white absolute z-1 left-2 text-2xl">
                     {item.title}
                 </div>
                 <img src={item.img} className='' alt="" />
@@ -76,7 +76,7 @@ return (
             </div>
             </div>
 
-            <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6">
+            <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 my-8">
             {elements.map((item, index) =>(
                 <div key={index} className="">
                 <div className="mb-4">

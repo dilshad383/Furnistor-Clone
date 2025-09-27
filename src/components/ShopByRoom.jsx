@@ -166,9 +166,9 @@ const totalItemPrice = cart.reduce(
 )}
 
 {/* products */}
-      <section className="bg-[#e9e6e3] px-14 py-8">
-        <h2 className="text-5xl font-light">Shop by room</h2>
-        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 my-4">
+      <section className="bg-[#e9e6e3] px-14 max-md:px-4 py-8">
+        <h2 className="text-5xl font-light max-md:text-3xl">Explore products</h2>
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 max-md:grid-cols-2 gap-8 max-md:gap-4 my-4">
           {products.map((item, idx) => (
             <div id={idx} className="group" key={idx}>
               <div className="h-70">

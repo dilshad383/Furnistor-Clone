@@ -9,12 +9,12 @@ import { SiHouzz } from 'react-icons/si';
 const Footer = () => {
   return (
     <div className='pb-8 mt-6'>
-      <div className="relative h-[15rem]  overflow-hidden">
+      <div className="relative h-[15rem] overflow-hidden">
         <div 
-        className="contact-bg grid grid-cols-2 gap-4 text-white px-6 py-14">
+        className="contact-bg grid grid-cols-2 gap-4 text-white px-6 py-14 ">
           <div className="">
-            <h5 className="text-5xl font-light py-2 ">Stay Inspired</h5>
-            <p>Subscribe to receive updates on new posts, exclusive offers, and special content just for you. </p>
+            <h5 className="text-5xl max-md:text-3xl font-light py-2 ">Stay Inspired</h5>
+            <p className='max-md:text-sm'>Subscribe to receive updates on new posts, exclusive offers, and special content just for you. </p>
           </div>
           <div className="grid grid-cols-2 items-center gap-4">
             <input className='bg-white text-black placeholder-gray-500 px-4 py-2' type="email" name="" id="" placeholder='E-mail' />
@@ -25,16 +25,16 @@ const Footer = () => {
       </div>
       <div className="grid lg:grid-cols-3 py-4 px-6">
         <div className="">
-          <h1 className="text-3xl font-light">
+          <h1 className="text-4xl font-light">
             Handcrafted in København
           </h1>
-          <p>
+          <p className='my-3'>
             Pilestæde 45, 1st Floor,
             1112 Copenhagen, Denmark
           </p>
-          <div className="flex gap-4 py-4">
-            <img className='w-1/20' src={figure1} alt="" />
-            <img className='w-1/20' src={figure2} alt="" />
+          <div className="flex gap-4 pb-4">
+            <img className='w-2/20' src={figure1} alt="" />
+            <img className='w-2/20' src={figure2} alt="" />
           </div>
         </div>
         <div className="col-span-2 grid lg:grid-cols-4 max-lg:grid-cols-2 gap-4">

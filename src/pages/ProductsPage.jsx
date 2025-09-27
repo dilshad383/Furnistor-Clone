@@ -112,7 +112,7 @@ const products =[
 const ProductsPage = () => {
   return (
     <div className='bg-[#e9e6e3]'>
-      <div className="px-8">
+      <div className="px-8 max-md:px-4">
         <Categories
         sectionTitle=""
         items={category}
